@@ -13,4 +13,4 @@ data_show= pd.DataFrame(data={'negatif' : [neg], 'positif': [pos], 'netral':[net
 st.title('Selamat datang di aplikasi Senasi')
 
 st.subheader('Hasil Sentimen Inflasi')
-st.bar_chart(data_show)
+st.bar_chart(data_show.T)
