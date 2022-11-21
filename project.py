@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 data = pd.read_csv('tweets_all_data_clean.csv')
 
@@ -9,7 +8,7 @@ net = data['label'].value_counts()[0]
 
 pos = data['label'].value_counts()[1]
 data_show= pd.DataFrame(data={'negatif' : [neg], 'positif': [pos], 'netral':[net]})
-plt.bar(x_pos, height, color=['red', 'blue', 'lilac'])
+
 
 st.title('Selamat datang di aplikasi Senasi')
 
